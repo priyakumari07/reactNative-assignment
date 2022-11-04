@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {ISignIn} from '../model/login-request';
+import storeToken from '../state';
 import api from './api-service';
 
 export class LoginService {
@@ -10,6 +11,7 @@ export class LoginService {
     if (!response.data || response.data.length === 0) {
       throw new Error('Please Enter your userName and password');
     }
+    storeToken.token = response.data.token;
     return response.data;
   };
 }
