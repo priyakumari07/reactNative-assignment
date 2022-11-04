@@ -25,11 +25,11 @@ const Login = () => {
   const handleSubmitPress = async () => {
     setErrortext('');
     if (!userName) {
-      //alert('Please Enter your userName');
+      alert('Please Enter your userName');
       return;
     }
     if (!userPassword) {
-      //alert('Please Enter your Password');
+      alert('Please Enter your Password');
       return;
     }
     console.log('Login button', userName, userPassword);
