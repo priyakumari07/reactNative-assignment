@@ -68,7 +68,12 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderRadius: 5,
   },
-  textStyle: {fontSize: 40, fontWeight: 'bold', color: '#002222'},
+  textStyle: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#002222',
+    textAlign: 'center',
+  },
 });
 
 export default styles;
